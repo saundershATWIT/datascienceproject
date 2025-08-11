@@ -1,0 +1,110 @@
+IMDb Movie Ratings Analysis
+This data science project explores trends in IMDb movie ratings, genres, and other key factors using data from the IMDb dataset.
+By combining exploratory data analysis with visualizations, we identify genre distribution patterns, examine relationships between ratings and revenue, and explore how success indicators correlate with audience ratings.
+The project uses real-world IMDb data and includes visualizations, descriptive statistics, and processed datasets for further analysis.
+
+Project Structure
+bash
+Copy
+Edit
+├── codes/
+│   ├── get_imdb.py                  # Downloads and processes IMDb dataset
+│   ├── moviesuccess_graphs.py       # Generates visualizations from dataset
+├── data/
+│   └── imdb_titles_with_ratings.csv # Cleaned dataset
+├── pictures/ # Generated graphs and plots
+│   ├── movies_per_genre.png
+│   ├── rating_hist.png
+│   ├── revenue_vs_rating.png
+│   └── success_vs_rating.png
+├── report/
+│   └── Individual_Project_IMDb_Report.pdf
+└── README.md
+Dataset
+Source: Kaggle - IMDb Dataset
+
+Files Used:
+
+title.basics.tsv – movie titles, release years, genres, runtime
+
+title.ratings.tsv – IMDb average ratings and number of votes
+
+Size: 839 movies, 33 columns after processing
+
+Key Features:
+
+primaryTitle – movie title
+
+startYear – release year
+
+runtimeMinutes – runtime in minutes
+
+genres – list of genres
+
+averageRating – IMDb rating
+
+numVotes – number of votes
+
+Genre dummy variables (e.g., Action, Comedy, Drama)
+
+Success – derived success indicator
+
+Research Questions
+Which movie genres are most common in the dataset?
+
+What is the distribution of IMDb ratings across movies?
+
+How does revenue relate to IMDb rating?
+
+Is there a relationship between calculated success metrics and ratings?
+
+Visualizations & Analysis
+All visualizations answering the above questions are implemented and rendered in the scripts:
+
+codes/moviesuccess_graphs.py
+
+This script includes:
+
+Data cleaning and preprocessing
+
+Genre distribution plots
+
+Rating distribution histograms
+
+Revenue vs. rating scatter plots
+
+Success vs. rating scatter plots
+
+Tools & Libraries
+Python 3.13+
+
+Pandas, NumPy
+
+Matplotlib, Seaborn
+
+KaggleHub
+
+How to Run
+Clone this repo
+
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install pandas numpy matplotlib seaborn kagglehub
+Run the graph generation script:
+
+bash
+Copy
+Edit
+python codes/moviesuccess_graphs.py
+Generated plots will be saved in the pictures/ folder.
+
+Report
+The final written report following an IEEE-style structure is available at:
+
+bash
+Copy
+Edit
+report/Individual_Project_IMDb_Report.pdf

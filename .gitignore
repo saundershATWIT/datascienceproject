@@ -6,3 +6,7 @@ data/*.csv
 data/*.tsv
 data/*.parquet
 .cache/
+data/*.csv
+data/*.tsv
+data/*.parquet
+.cache/
